@@ -21,6 +21,11 @@ struct ContentView: View {
                     SpotifyHomeView()
                 }
             }
+            Button("open bubmle") {
+                router.showScreen(.fullScreenCover) { _ in
+                    BumbleHomeView()
+                }
+            }
         }
     }
 }
